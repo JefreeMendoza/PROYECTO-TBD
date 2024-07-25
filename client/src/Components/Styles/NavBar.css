@@ -1,0 +1,106 @@
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 34px;
+    color:white;
+}
+
+
+.img-main {
+    max-width: 80px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.navbar-container{
+    
+    /* background-color: #19427e; */
+    /* border-radius: 15px; */
+    /* background-color: #f0f0f0; */
+   /*  padding: 10px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.navbar-links{
+    list-style: none;
+    text-align: center;
+    gap: 20px;
+    /* margin-left: auto; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    /* background-color: #19427e; */
+    border-radius: 10px;
+    
+}
+
+.navbar-links li a:hover {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-link.active {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 30%;
+        background-color: #242424;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 3px 0;
+    }
+    
+
+    .navbar-links li a:hover {
+        color:black;
+        background-color: white;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+}

@@ -1,0 +1,40 @@
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+  /*   border: 1px solid #ccc; */
+    border-radius: 4px;
+    /* background-color: #fff; */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
